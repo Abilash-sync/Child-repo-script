@@ -11,7 +11,7 @@ body {
 .app {
   background: #fff;
   width: 100%;
-  max-width: 520px;
+  max-width: 480px;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
@@ -20,7 +20,7 @@ h1 { margin: 0 0 1rem; font-size: 1.5rem; }
 form {
   display: flex;
   gap: 0.5rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 input[type="text"] {
   flex: 1;
@@ -28,14 +28,6 @@ input[type="text"] {
   border: 1px solid #d0d4dd;
   border-radius: 8px;
   font-size: 1rem;
-}
-select {
-  padding: 0.6rem 0.5rem;
-  border: 1px solid #d0d4dd;
-  border-radius: 8px;
-  background: #fff;
-  font-size: 0.95rem;
-  cursor: pointer;
 }
 button {
   padding: 0.6rem 0.9rem;
@@ -47,65 +39,19 @@ button {
   cursor: pointer;
 }
 button:hover { background: #4338ca; }
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
-}
-.filter {
-  background: #f3f4f6;
-  color: #374151;
-  padding: 0.35rem 0.7rem;
-  font-size: 0.85rem;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-.filter:hover { background: #e5e7eb; }
-.filter.active {
-  background: #e0e7ff;
-  color: #3730a3;
-  font-weight: 600;
-}
-.filter.clear {
-  background: transparent;
-  color: #ef4444;
-  margin-left: auto;
-}
-.filter.clear:hover { background: #fee2e2; }
-.filter .dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--cat-color, #6b7280);
-}
 ul { list-style: none; padding: 0; margin: 0; }
 li {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  justify-content: space-between;
   padding: 0.6rem 0.8rem;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   margin-bottom: 0.5rem;
   background: #fafafa;
 }
-.cat-tag {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-li .text {
-  cursor: pointer;
-  flex: 1;
-}
-li.done .text {
-  text-decoration: line-through;
-  color: #9ca3af;
-}
+li.done span { text-decoration: line-through; color: #9ca3af; }
+li span { cursor: pointer; flex: 1; }
 .delete {
   background: transparent;
   color: #ef4444;
@@ -114,11 +60,3 @@ li.done .text {
 }
 .delete:hover { background: transparent; text-decoration: underline; }
 .empty { text-align: center; color: #9ca3af; padding: 1rem 0; }
-.footer {
-  text-align: center;
-  font-size: 0.85rem;
-  color: #6b7280;
-  margin-top: 0.5rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid #f3f4f6;
-}

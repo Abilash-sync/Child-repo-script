@@ -6,9 +6,6 @@ A basic to-do list app built with **React + Vite**.
 - Add tasks
 - Mark tasks as done
 - Delete tasks
-- **Task categories (Work, Personal, Shopping, Other) with color tags**
-- **Filter tasks by category**
-- **"Clear done" button**
 - Persists in `localStorage`
 
 ## Stack
