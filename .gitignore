@@ -5,3 +5,6 @@ dist-ssr
 *.local
 .env
 .vite
+
+# Supporting apps cloned by setup-supporting-apps.sh
+/supporting-apps/
