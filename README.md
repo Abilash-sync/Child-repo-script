@@ -1,6 +1,6 @@
 # To-Do App
 
-A very basic to-do list app built with plain HTML, CSS, and JavaScript.
+A basic to-do list app built with **React + Vite**.
 
 **Features:**
 - Add tasks
@@ -8,4 +8,12 @@ A very basic to-do list app built with plain HTML, CSS, and JavaScript.
 - Delete tasks
 - Persists in `localStorage`
 
-Open `index.html` in a browser to use it.
+## Stack
+- React 18
+- Vite 5
+
+## Scripts
+- `npm install` — install dependencies
+- `npm run dev` — start dev server
+- `npm run build` — production build to `dist/`
+- `npm run preview` — preview the production build
