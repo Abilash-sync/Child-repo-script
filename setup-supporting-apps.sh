@@ -1,13 +1,15 @@
 #!/bin/bash
 # setup-supporting-apps.sh
-# Creates a "supporting-apps" folder inside this To-Do-app directory
-# and clones the three supporting repositories into it.
+# Creates a "supporting-apps" folder next to this To-Do-app repository
+# (i.e. in the parent directory) and clones the three supporting
+# repositories into it.
 
 set -e
 
 # Resolve the directory where this script lives (i.e. the To-Do-app root)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TARGET_DIR="$SCRIPT_DIR/supporting-apps"
+PARENT_DIR="$(dirname "$SCRIPT_DIR")"
+TARGET_DIR="$PARENT_DIR/supporting-apps"
 
 REPOS=(
   "https://github.com/anushaviswanathan2002/Counter-app.git"
