@@ -1,6 +1,6 @@
 #!/bin/bash
 # setup-supporting-apps.sh
-# Clones the three supporting repositories directly into the parent
+# Clones the supporting repositories directly into the parent
 # directory (i.e. /home/user), one folder per repo.
 
 set -e
@@ -11,9 +11,8 @@ PARENT_DIR="$(dirname "$SCRIPT_DIR")"
 TARGET_DIR="$PARENT_DIR"
 
 REPOS=(
-  "https://github.com/anushaviswanathan2002/Counter-app.git"
-  "https://github.com/anushaviswanathan2002/Drawing-App.git"
-  "https://github.com/anushaviswanathan2002/Memory-app.git"
+  "https://github.com/Abilash-sync/Deepagent"
+  "https://github.com/Abilash-sync/IDE"
 )
 
 echo "==> Target directory: $TARGET_DIR"
